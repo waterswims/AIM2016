@@ -1,11 +1,53 @@
 \documentclass{beamer}
-\usepackage{soton-beamer}
+\usepackage{xcolor}
+%\usepackage{fontspec}
+%\setmainfont{Georgia}
+%\usepackage[T1]{fontenc}
 \usepackage{winfonts}
+\usepackage[backend=bibtex]{biblatex}
 \renewcommand{\sfdefault}{georgia}
+
+\bibliography{report}
+
+%%%%%%%%%%%%%%
+% Soton colourscheme
+
+%primary palette:           RED    GREEN  BLUE
+\definecolor{sotonblu}{rgb}{.00392 .26275 .34902} % soton blue
+\definecolor{sotongrn}{rgb}{.00000 .44706 .45882} % soton green
+\definecolor{sotoncya}{rgb}{.03922 .58824 .66275} % soton cyan
+\definecolor{sotongry}{rgb}{.19608 .23922 .26275} % soton grey
+\definecolor{sotonbei}{rgb}{.59216 .61961 .27059} % soton beige
+\definecolor{sotonmet}{rgb}{.73333 .73333 .73333} % soton metal
+
+%some secondary colors:
+\definecolor{sotonyel}{rgb}{.99999 .70196 .00000} % soton yellow
+\definecolor{sotonora}{rgb}{.99608 .24314 .07843} % soton orange
+\definecolor{sotonred}{rgb}{.94118 .05882 .17255} % soton red
+\definecolor{sotonrus}{rgb}{.67059 .07059 .06275} % soton russet
+\definecolor{sotonbrn}{rgb}{.54118 .25490 .16863} % soton brown
+\definecolor{sotonpnk}{rgb}{.88627 .41176 .62353} % soton pink
+\definecolor{sotonppl}{rgb}{.32549 .12157 .26667} % soton purple
+
+
+\setbeamertemplate{background canvas}[vertical shading][top=sotonblu,bottom=sotoncya]
+\setbeamercolor{background canvas}{bg=}
+\setbeamercolor{button border}{bg=sotonblu, fg=sotonblu}
+\setbeamercolor{button}{bg=sotonblu, fg=DarkRed}
+
+\setbeamercolor{frametitle}{fg=sotonyel}
+\setbeamercolor{alerted text}{fg=sotonyel}
+\setbeamercolor{normal text}{fg=white}
+\setbeamercolor{titlelike}{fg=sotonyel}
+\setbeamercolor{author}{fg=white}
+\setbeamercolor{date}{fg=white}
+\setbeamercolor{item}{fg=white}
+
+%%%%%%%%%%%%%%%%%%%%
 
 \title{Identification of the Curie Temperature Distribution from
 Temperature Dependent Magnetisation Data}
-\author{Jonathon Waters\inst{1}, Hans Fangohr\inst{1}, Denis Kramer\inst{1}\\and Ondrej Hovorka\inst{1}}
+\author{Jonathon Waters\inst{1}, Hans Fangohr\inst{1}, Denis Kramer\inst{1} and Ondrej Hovorka\inst{1}}
 \institute{
 	\inst{1}
 	Engineering and the Environment,\\
@@ -14,18 +56,17 @@ Temperature Dependent Magnetisation Data}
 }
 
 \begin{document}
-\frame{\titlepage \includegraphics[width=4cm]{Images/uos_grey_large}}
+\frame{\titlepage 
+\includegraphics[height=1cm]{Images/sponsor-wo}\hfill\includegraphics[height=1cm]{Images/uos_grey_large}}
 
 \setbeamertemplate{headline}{
 	\vskip25pt % horizontal line
-	\vskip-21pt\hspace{2pt}\hfill\includegraphics[width=4cm]{Images/uos_grey_large}\hspace{3.5mm} % logo on the right
+	\vskip-21pt\hspace{2pt}\hfill\includegraphics[height=7mm]{Images/sponsor-wo}\hspace{3.5mm}\includegraphics[height=7mm]{Images/uos_grey_large}\hspace{3.5mm} % logo on the right
 }
 
 \setbeamertemplate{footline}{
 	\vskip-8pt % horizontal line
-	\hspace{7.5mm}
-	\insertshorttitle
-	\hspace{1cm} \insertframenumber/\inserttotalframenumber
+	\hspace{12cm} \insertframenumber/\inserttotalframenumber
 	\vskip4pt
 }
 
@@ -34,13 +75,27 @@ Temperature Dependent Magnetisation Data}
 	\begin{columns}
 		\column{7cm}
 		\begin{itemize}
-		\item{HAMR material can be thought of as a collection of disconnected grains, each with different size $D$.}
-		\item{This distribution in $D$ leads to a distribution in the Curie Temperatures $T_C$ of the grains.}
-		\item{The distribution in $T_C$ increases the DC noise for the material.}
-		\item{According to a 2014 publication, understanding the distribution $f(T_C)$ is a key step to realising HAMR.}
+			\item{In HAMR (heat assisted magnetic recording) there is no fixed $T_C$ (Curie Temperature). It varies based upon a number of factors and leads to a distribution $f(T_C)$.}
+			\item{The recording performance is greatly decreased in systems with a wide $f(T_C)$.}
+			\item{According to a 2014 publication, understanding the distribution $f(T_C)$ is a key step to realising HAMR.\footnotemark}
 		\end{itemize}
 		\column{5cm}
 		\includegraphics[width=5cm]{Images/Table}
+	\end{columns}
+	\footnotetext{\fullcite{weller2014hamr}}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Introduction}
+	\begin{columns}
+		\column{7cm}
+		\begin{itemize}
+			\item{HAMR material can be thought of as a collection of disconnected grains, each with different size $D$.\newline}
+			\item{As the grain size approaches HAMR levels, $T_C$ becomes dependent upon $D$, resulting in a distribution in $T_C$.\newline}
+			\item{We present a method to identify $f(T_C)$ from the magnetisation of the entire assembly.}
+		\end{itemize}
+		\column{5cm}
+		\includegraphics[width=5cm]{Images/grains}
 	\end{columns}
 \end{frame}
 
@@ -50,6 +105,11 @@ Temperature Dependent Magnetisation Data}
 
 \begin{frame}
 	\frametitle{Objectives}
+	\begin{itemize}
+		\item{Develop a method to identify the $T_C$ distribution which incorporates the finite size effects of the individual grains.\newline}
+		\item{Test this method against a toy model in order to verify it's effectiveness.\newline}
+		\item{Test the sensitivity of the model against various grain size distributions.\newline}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
