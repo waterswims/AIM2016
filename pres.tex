@@ -150,12 +150,39 @@ Temperature Dependent Magnetisation Data}
 		\item{The universal exponents found were consistent with the analytical exponents of the 2D Ising model.}
 		\end{itemize}
 	\column{5cm}
+		GRAIN PICTURE HERE
 		\includegraphics[width=5cm]{Images/Ds}
 	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Test Case: 2D Ising Model}
+	\begin{columns}
+	\column{7cm}
+		\begin{itemize}
+		\item{A seperate Monte Carlo simulation was then run which modelled an assembly of grains with a lognormal grain size distribution ($\bar{D}=100$ and $\sigma_D=30$).}
+		\item{The resultant distribution was then compared against that which was directly converted from the known distribution in $D$.}
+		\item{After the success of this fit, other distributions in $D$ were attempted.}
+		\end{itemize}
+	\column{5cm}
+		TC DISTRIBUTIONS
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Test Case: 2D Ising Model}
+	\begin{columns}
+	\column{7cm}
+		\begin{itemize}
+		\item{It can be seen that the fit becomes poorer as the size distribution narrows.}
+		\item{A constrained fit was attempted in order to correct this. If $\sigma_D/\bar{D}$ is known, then $\bar{t}$ can be fixed. $d_0$ can then be found by fitting $T_C(D)$, meaning that only $M_0^*$ and $\sigma_t$ need to be fitted.}
+		\end{itemize}
+		$$
+		T_C(D) = T_C^b\left(1 - \left(\frac{D}{d_0}\right)^{-1/\nu}\right)
+		$$
+	\column{5cm}
+		DISTRO SOLUTIONS
+	\end{columns}
 \end{frame}
 
 \begin{frame}
