@@ -77,12 +77,12 @@ Temperature Dependent Magnetisation Data}
 		\begin{itemize}
 			\item{In HAMR (heat assisted magnetic recording) there is no fixed $T_C$ (Curie Temperature). It varies based upon a number of factors and leads to a distribution $f(T_C)$.}
 			\item{The recording performance is greatly decreased in systems with a wide $f(T_C)$.}
-			\item{According to a 2014 publication, understanding the distribution $f(T_C)$ is a key step to realising HAMR.\footnotemark}
+			\item{According to a 2014 publication, understanding the distribution $f(T_C)$ is a key step to realising HAMR.\footnotemark[1]}
 		\end{itemize}
 		\column{5cm}
-		\includegraphics[width=5cm]{Images/Table}
+		\includegraphics[width=5cm]{Images/Table}\footnotemark[1]
 	\end{columns}
-	\footnotetext{\fullcite{weller2014hamr}}
+	\footnotetext[1]{\fullcite{weller2014hamr}}
 \end{frame}
 
 \begin{frame}
@@ -114,14 +114,48 @@ Temperature Dependent Magnetisation Data}
 
 \begin{frame}
 	\frametitle{Our Method}
+	We assume that the magnetisation of an individual grain obeys the finite size scaling function:\footfullcite{hovorka2012curie}
+	$$
+	m(D,T) \propto D^{-\beta/\nu} \mu \left(D^{1/\nu}\frac{T-T_C^b}{T_C^b}\right)
+	$$
+	where $\beta$ and $\nu$ are \textit{universal exponents}, $\nu$ is the \textit{universal scaling function} and $T_C^b$ is the bulk Curie temperature.
+	
+	Taking the average of these magnetisations over all grain sizes leads to the form of the ensemble magnetisation for the 2D case:
+	$$
+	M(T) = M_0\int_0^\infty D^{2 - \beta/\nu} \mu \left(D^{1/\nu}\frac{T-T_C^b}{T_C^b}\right) f_D(D) dD
+	$$
 \end{frame}
 
 \begin{frame}
-	\frametitle{Test Case: Ising Model}
+	\frametitle{Our Method}
+	Using the change of variables:
+	$$
+	t \equiv T_C^b - T_C(D) = T_C^b \left(\frac{D}{d_0}\right)^{-1/\nu}
+	$$
+	where $d_0$ is the \textit{length scale calibration factor}, close to the unit cell length, we can rewrite the ensemble magnetisation as:
+	$$
+	M(T) = M_0^*\int_0^{T_C^b} t^{-2\nu +\beta} \mu\left(d_0^{\frac{1}{\nu}}\frac{T-T_C^b}{t}\right) f_t(t) dt
+	$$
+	which can be fitted to magnetisation measurements for ensemble material in order to find $f_t(t)$.
 \end{frame}
 
 \begin{frame}
-	\frametitle{Results}
+	\frametitle{Test Case: 2D Ising Model}
+	\begin{columns}
+	\column{7cm}
+		The method we introduced was tested against the 2D Ising model in order to verify it's effectiveness:
+		\begin{itemize}
+		\item{Individual grain sizes were modelled using Metropolis Monte Carlo simulations.}
+		\item{The universal constants and function were found by collapsing the curves for individual grain sizes onto the universal function.}
+		\item{The universal exponents found were consistent with the analytical exponents of the 2D Ising model.}
+		\end{itemize}
+	\column{5cm}
+		\includegraphics[width=5cm]{Images/Ds}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Test Case: 2D Ising Model}
 \end{frame}
 
 \begin{frame}
