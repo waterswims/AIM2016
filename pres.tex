@@ -93,7 +93,7 @@ Temperature Dependent Magnetisation Data}
 		\column{7cm}
 		\begin{itemize}
 			\item{HAMR material can be thought of as a collection of disconnected grains, each with different size $D$.\newline}
-			\item{As the grain size approaches HAMR levels, $T_C$ becomes dependent upon $D$, resulting in a distribution in $T_C$.\newline}
+			\item{As the grain size approaches HAMR levels, $T_C$ becomes highly dependent upon $D$, resulting in a distribution in $T_C$.\newline}
 			\item{We present a method to identify $f(T_C)$ from the magnetisation of the entire assembly.}
 		\end{itemize}
 		\column{5cm}
@@ -116,16 +116,16 @@ Temperature Dependent Magnetisation Data}
 
 \begin{frame}
 	\frametitle{Our Method}
-	We assume that the magnetisation of an individual grain obeys the finite size scaling function:\footfullcite{hovorka2012curie}
+	We can assume that the magnetisation of the ensemble is equal to the normalised expectation magnetic moment of the grains:
+	$$
+	M(T) = M_0\int_0^\infty D^{d} m(D,T) f_D(D) dD
+	$$	
+	
+	We can then take that the magnetisation of an individual grain obeys the finite size scaling function:\footfullcite{hovorka2012curie}
 	$$
 	m(D,T) \propto D^{-\beta/\nu} \mu \left(D^{1/\nu}\frac{T-T_C^b}{T_C^b}\right)
 	$$
 	where $\beta$ and $\nu$ are \textit{universal exponents}, $\nu$ is the \textit{universal scaling function} and $T_C^b$ is the bulk Curie temperature.
-	
-	Taking the average of these magnetisations over all grain sizes leads to the form of the ensemble magnetisation for the 2D case:
-	$$
-	M(T) = M_0\int_0^\infty D^{2 - \beta/\nu} \mu \left(D^{1/\nu}\frac{T-T_C^b}{T_C^b}\right) f_D(D) dD
-	$$
 \end{frame}
 
 \begin{frame}
@@ -177,13 +177,12 @@ Temperature Dependent Magnetisation Data}
 	\column{7cm}
 		\begin{itemize}
 		\item{It can be seen that the fit becomes poorer as the size distribution narrows.}
-		\item{A constrained fit was attempted in order to correct this. If $\sigma_D/\bar{D}$ is known, then $\bar{t}$ can be fixed. $d_0$ can then be found by fitting $T_C(D)$, meaning that only $M_0^*$ and $\sigma_t$ need to be fitted.}
+		\item{A constrained fit was attempted in order to correct this. If $\bar{D}$ is know then $d_0$ can be fixed. If instead $\sigma_D/\bar{D}$ is known, then $\bar{t}$ can be fixed.}
 		\end{itemize}
-		$$
-		T_C(D) = T_C^b\left(1 - \left(\frac{D}{d_0}\right)^{-1/\nu}\right)
-		$$
 	\column{5cm}
-		DISTRO SOLUTIONS
+		\includegraphics[width=5cm]{Images/t_bars} \\
+		\includegraphics[width=5cm]{Images/sig_ts}
+
 	\end{columns}
 \end{frame}
 
