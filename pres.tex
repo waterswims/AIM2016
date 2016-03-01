@@ -56,6 +56,7 @@ Temperature Dependent Magnetisation Data}
 	\inst{2}
 	Somewhere
 }
+\date{}
 
 \begin{document}
 \frame{\titlepage 
@@ -76,15 +77,25 @@ Temperature Dependent Magnetisation Data}
 	\frametitle{Introduction}
 	\begin{columns}
 		\column{7cm}
+		\vspace{8mm} \\
+		In HAMR\footnotemark[1]:
 		\begin{itemize}
-			\item{In HAMR (heat assisted magnetic recording) there is no fixed $T_C$ (Curie Temperature). It varies based upon a number of factors and leads to a distribution $f(T_C)$.}
-			\item{The recording performance is greatly decreased in systems with a wide $f(T_C)$.}
-			\item{According to a 2014 publication, understanding the distribution $f(T_C)$ is a key step to realising HAMR.\footnotemark[1]}
+			\item{$\bar{T}_C$ determines laser power.}
+			\item{$\sigma_{T_C}$ effects noise performance.}
+		\end{itemize} \vspace{8mm}
+		In Magnetic Hyperthermia:
+		\begin{itemize}
+		\item{$T_C$ "switches off" process.}
 		\end{itemize}
+		
 		\column{5cm}
-		\includegraphics[width=5cm]{Images/Table}\footnotemark[1]
+		\begin{center}
+		\includegraphics[width=4cm]{Images/Anisotropy} \\ \vspace{3mm}
+		\includegraphics[width=3.5cm]{Images/rat2}\footnotemark[2]
+		\end{center}
 	\end{columns}
 	\footnotetext[1]{\fullcite{weller2014hamr}}
+	\footnotetext[2]{\fullcite{corchero2009biomedical}}
 \end{frame}
 
 \begin{frame}
