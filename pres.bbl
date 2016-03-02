@@ -1,0 +1,222 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{apostolova2009possible}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Apostolova}{A.}%
+     {I}{I}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wesselinowa}{W.}%
+     {JM}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{AIWJ1}
+  \strng{fullhash}{AIWJ1}
+  \field{sortinit}{A}
+  \field{number}{25}
+  \field{pages}{986\bibrangedash 990}
+  \field{title}{Possible low-TC nanoparticles for use in magnetic hyperthermia
+  treatments}
+  \field{volume}{149}
+  \field{journaltitle}{Solid State Communications}
+  \field{year}{2009}
+\endentry
+
+\entry{berger2002critical}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Berger}{B.}%
+     {Andreas}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Campillo}{C.}%
+     {G}{G}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vivas}{V.}%
+     {P}{P}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pearson}{P.}%
+     {JE}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bader}{B.}%
+     {SD}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Baca}{B.}%
+     {E}{E}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Prieto}{P.}%
+     {P}{P}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {New York, NY: American Institute of Physics, c1937-}%
+  }
+  \strng{namehash}{BA+1}
+  \strng{fullhash}{BACGVPPJBSBEPP1}
+  \field{sortinit}{B}
+  \field{number}{10}
+  \field{pages}{8393\bibrangedash 8395}
+  \field{title}{Critical exponents of inhomogeneous ferromagnets}
+  \field{volume}{91}
+  \field{journaltitle}{Journal of applied physics}
+  \field{year}{2002}
+\endentry
+
+\entry{pisana2015curie}{article}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Pisana}{P.}%
+     {Simone}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jain}{J.}%
+     {Shikha}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Reiner}{R.}%
+     {James~W}{J.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mosendz}{M.}%
+     {Oleksandr}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Parker}{P.}%
+     {Gregory~J}{G.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Staffaroni}{S.}%
+     {Matteo}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hellwig}{H.}%
+     {Olav}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stipe}{S.}%
+     {Barry~C}{B.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{PS+1}
+  \strng{fullhash}{PSJSRJWMOPGJSMHOSBC1}
+  \field{sortinit}{P}
+  \field{number}{4}
+  \field{pages}{1\bibrangedash 5}
+  \field{title}{Curie temperature distribution in FePt granular media}
+  \field{volume}{51}
+  \field{journaltitle}{Magnetics, IEEE Transactions on}
+  \field{year}{2015}
+\endentry
+
+\entry{weller2014hamr}{article}{}
+  \name{author}{9}{}{%
+    {{}%
+     {Weller}{W.}%
+     {Dieter}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Parker}{P.}%
+     {Gregory}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mosendz}{M.}%
+     {Oleksandr}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Champion}{C.}%
+     {Eric}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stipe}{S.}%
+     {Barry}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Xiaobin}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klemmer}{K.}%
+     {Timothy}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ju}{J.}%
+     {Ganping}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ajan}{A.}%
+     {Antony}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC 445 HOES LANE, PISCATAWAY,
+  NJ 08855-4141 USA}%
+  }
+  \strng{namehash}{WD+1}
+  \strng{fullhash}{WDPGMOCESBWXKTJGAA1}
+  \field{sortinit}{W}
+  \field{number}{1}
+  \field{pages}{3100108}
+  \field{title}{A HAMR Media Technology Roadmap to an Areal Density of 4 Tb/in}
+  \field{volume}{50}
+  \field{journaltitle}{IEEE transactions on magnetics}
+  \field{year}{2014}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

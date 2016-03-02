@@ -533,15 +533,4 @@ url = {http://dx.doi.org/10.1017/CBO9781139696463}
   publisher={Elsevier}
 }
 
-@article{pisana2015curie,
-  title={Curie temperature distribution in FePt granular media},
-  author={Pisana, Simone and Jain, Shikha and Reiner, James W and Mosendz, Oleksandr and Parker, Gregory J and Staffaroni, Matteo and Hellwig, Olav and Stipe, Barry C},
-  journal={Magnetics, IEEE Transactions on},
-  volume={51},
-  number={4},
-  pages={1--5},
-  year={2015},
-  publisher={IEEE}
-}
-
 

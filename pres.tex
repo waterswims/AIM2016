@@ -76,129 +76,153 @@ Temperature Dependent Magnetisation Data}
 \begin{frame}
 	\frametitle{Introduction}
 	\begin{columns}
-		\column{7cm}
-		\vspace{8mm} \\
+		\column{6cm}
 		In HAMR\footnotemark[1]:
 		\begin{itemize}
 			\item{$\bar{T}_C$ determines laser power.}
 			\item{$\sigma_{T_C}$ effects noise performance.}
-		\end{itemize} \vspace{8mm}
-		In Magnetic Hyperthermia:
-		\begin{itemize}
-		\item{$T_C$ "switches off" process.}
-		\end{itemize}
+		\end{itemize} \vspace{1mm}
 		
-		\column{5cm}
 		\begin{center}
 		\includegraphics[width=4cm]{Images/Anisotropy} \\ \vspace{3mm}
-		\includegraphics[width=3.5cm]{Images/rat2}\footnotemark[2]
+		\end{center}
+		
+		\column{6cm}
+		In Magnetic Hyperthermia\footnotemark[2]:
+		\begin{itemize}
+		\item{$T_C$ "switches off" process.}
+		\end{itemize} \vspace{3mm}
+		
+		\begin{center}
+		\includegraphics[width=4cm]{Images/person} \\
+		\tiny \^{A}ngela Andrade, Roberta Ferreira, Jos\'{e} Fabris and Rosana Domingues (2011). Coating Nanomagnetic Particles for Biomedical Applications
 		\end{center}
 	\end{columns}
-	\footnotetext[1]{\fullcite{weller2014hamr}}
-	\footnotetext[2]{\fullcite{corchero2009biomedical}}
+	\footnotetext[1]{\tiny \fullcite{weller2014hamr}}
+	\footnotetext[2]{\tiny \fullcite{apostolova2009possible}}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Introduction}
+	\frametitle{Finite Sized $T_C$}
 	\begin{columns}
-		\column{7cm}
-		\begin{itemize}
-			\item{HAMR material can be thought of as a collection of disconnected grains, each with different size $D$.\newline}
-			\item{As the grain size approaches HAMR levels, $T_C$ becomes highly dependent upon $D$, resulting in a distribution in $T_C$.\newline}
-			\item{We present a method to identify $f(T_C)$ from the magnetisation of the entire assembly.}
-		\end{itemize}
-		\column{5cm}
-		\includegraphics[width=5cm]{Images/grains}
+		\column{6cm}
+		\begin{center}
+		Correlation length $\propto |T-T_C^b|^{-\nu}$ \\ \vspace{3mm}
+		Grain size, $D \propto |T_C(D)-T_C^b|^{-\nu}$ \\ \vspace{3mm}
+		\includegraphics[width=5cm]{Images/grains2}
+		\end{center}
+		\column{6cm}
+		\begin{center}
+		\includegraphics[width=5cm]{Images/TcD}
+		\end{center} \vspace{4mm}
+		$$
+		f_D(D) \Longrightarrow f_{T_C}(T_C)
+		$$
 	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Previous Methods}
+	2 Types:
+	\vspace{4mm}
+	\begin{itemize}
+		\item{Explicit measurement of individual grains.\footnotemark[3]}
+		\begin{itemize}
+			\item{Introduces field broadening}
+		\end{itemize}
+		\vspace{4mm}
+		\item{Implicit calculation using global measurements.\footnotemark[4]}
+		\begin{itemize}
+			\item{Uses bulk relations}
+		\end{itemize}
+	\end{itemize}	
+	\footnotetext[3]{\tiny \fullcite{pisana2015curie}}
+	\footnotetext[4]{\tiny \fullcite{berger2002critical}}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Objectives}
 	\begin{itemize}
 		\item{Develop a method to identify the $T_C$ distribution which incorporates the finite size effects of the individual grains.\newline}
-		\item{Test this method against a toy model in order to verify it's effectiveness.\newline}
-		\item{Test the sensitivity of the model against various grain size distributions.\newline}
+		\item{Test this method against benchmark data in order to verify it's effectiveness for different distributions.\newline}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Our Method}
-	We can assume that the magnetisation of the ensemble is equal to the normalised expectation magnetic moment of the grains:
+	Aggregate Magnetisation:
 	$$
 	M(T) = M_0\int_0^\infty D^{d} m(D,T) f_D(D) dD
-	$$	
+	$$
 	
-	We can then take that the magnetisation of an individual grain obeys the finite size scaling function:\footfullcite{hovorka2012curie}
+	Scaling Ansatz:
 	$$
 	m(D,T) \propto D^{-\beta/\nu} \mu \left(D^{1/\nu}\frac{T-T_C^b}{T_C^b}\right)
 	$$
-	where $\beta$ and $\nu$ are \textit{universal exponents}, $\nu$ is the \textit{universal scaling function} and $T_C^b$ is the bulk Curie temperature.
+	
+	Change of Variables:
+	$$
+	D = d_0\left(\frac{t}{T_C^b}\right)^{-\nu}
+	$$
+	$$
+	t \equiv T_C^b - T_C(D)
+	$$
+	
+	Final Result:
+	$$
+	M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \mu\left(d_0^{\frac{1}{\nu}}\frac{T-T_C^b}{t}\right) f_t(t) dt
+	$$
 \end{frame}
 
 \begin{frame}
-	\frametitle{Our Method}
-	Using the change of variables:
+	\frametitle{Finding $f_t$}
 	$$
-	t \equiv T_C^b - T_C(D) = T_C^b \left(\frac{D}{d_0}\right)^{-1/\nu}
+	M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \mu\left(d_0^{\frac{1}{\nu}}\frac{T-T_C^b}{t}\right) f_t(t) dt
 	$$
-	where $d_0$ is the \textit{length scale calibration factor}, close to the unit cell length, we can rewrite the ensemble magnetisation as:
-	$$
-	M(T) = M_0^*\int_0^{T_C^b} t^{-2\nu +\beta} \mu\left(d_0^{\frac{1}{\nu}}\frac{T-T_C^b}{t}\right) f_t(t) dt
-	$$
-	which can be fitted to magnetisation measurements for ensemble material in order to find $f_t(t)$.
-\end{frame}
-
-\begin{frame}
-	\frametitle{Test Case: 2D Ising Model}
-	\begin{columns}
-	\column{7cm}
-		The method we introduced was tested against the 2D Ising model in order to verify it's effectiveness:
-		\begin{itemize}
-		\item{Individual grain sizes were modelled using Metropolis Monte Carlo simulations.}
-		\item{The universal constants and function were found by collapsing the curves for individual grain sizes onto the universal function.}
-		\item{The universal exponents found were consistent with the analytical exponents of the 2D Ising model.}
-		\end{itemize}
-	\column{5cm}
-		GRAIN PICTURE HERE
-		\includegraphics[width=5cm]{Images/Ds}
-	\end{columns}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Test Case: 2D Ising Model}
-	\begin{columns}
-	\column{7cm}
-		\begin{itemize}
-		\item{A seperate Monte Carlo simulation was then run which modelled an assembly of grains with a lognormal grain size distribution ($\bar{D}=100$ and $\sigma_D=30$).}
-		\item{The resultant distribution was then compared against that which was directly converted from the known distribution in $D$.}
-		\item{After the success of this fit, other distributions in $D$ were attempted.}
-		\end{itemize}
-	\column{5cm}
-		\includegraphics[width=5cm]{Images/t_dist}
-	\end{columns}
+	
+	\begin{itemize}
+		\item{$M(T)$: To be fitted}
+		\item{$d$, $\nu$, $\beta$, $\mu$: Known information about the material}
+		\item{$d_0$, $T_C^b$: May be known, otherwise taken from fit}
+		\item{$M_0^*$, $f_t$ [ $\bar{t}$, $\sigma_t$ ]: Taken from the fit}
+	\end{itemize}
+	
+	\begin{center}
+	\includegraphics[width=5cm]{Images/Ds}
+	\end{center}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Test Case: 2D Ising Model}
 	\begin{columns}
 	\column{7cm}
+		Used 2D Ising model as a benchmark:
 		\begin{itemize}
-		\item{It can be seen that the fit becomes poorer as the size distribution narrows.}
-		\item{A constrained fit was attempted in order to correct this. If $\bar{D}$ is know then $d_0$ can be fixed. If instead $\sigma_D/\bar{D}$ is known, then $\bar{t}$ can be fixed.}
+			\item{Easilly simulated}
+			\item{Analytical results for $\beta$, $\nu$, $T_C^b$...}
+		\end{itemize} \vspace{4mm}
+		
+		Tested against different $f_D$:
+		\begin{itemize}
+			\item{All mean $\bar{D}=100$}
+			\item{Standard deviation $\sigma_D=10, 20, 30 ,40$}
 		\end{itemize}
 	\column{5cm}
-		\includegraphics[width=5cm]{Images/t_bars} \\
-		\includegraphics[width=5cm]{Images/sig_ts}
-
+		\includegraphics[width=5cm]{Images/percs}
 	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Conclusions}
+	\begin{itemize}
+		\item{Presented a method to find size dependent $T_C$ distribution.}
+		\item{Based upon fitting ensemble magnetisation:}
+		$$
+		M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \mu\left(d_0^{\frac{1}{\nu}}\frac{T-T_C^b}{t}\right) f_t(t) dt
+		$$
+		\item{Tested against different size distributions $f_D$.}
+		\item{Given certain constraints, the method works well.}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}
