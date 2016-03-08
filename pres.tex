@@ -79,19 +79,18 @@ Temperature Dependent Magnetisation Data}
 		\column{6cm}
 		In HAMR\footnotemark[1]:
 		\begin{itemize}
-			\item{$\bar{T}_C$ determines laser power.}
-			\item{$\sigma_{T_C}$ effects noise performance.}
-		\end{itemize} \vspace{1mm}
+			\item{$T_C$ distribution affects the noise performance.}
+		\end{itemize} \vspace{4mm}
 		
 		\begin{center}
-		\includegraphics[width=4cm]{Images/Anisotropy} \\ \vspace{3mm}
+		\includegraphics[width=4cm]{Images/Ds_noinset} \\ \vspace{3mm}
 		\end{center}
 		
 		\column{6cm}
 		In Magnetic Hyperthermia\footnotemark[2]:
 		\begin{itemize}
-		\item{$T_C$ "switches off" process.}
-		\end{itemize} \vspace{3mm}
+		\item{Low $T_C$ reduces tissue damage.}
+		\end{itemize} \vspace{1mm}
 		
 		\begin{center}
 		\includegraphics[width=4cm]{Images/person} \\
@@ -127,12 +126,11 @@ Temperature Dependent Magnetisation Data}
 	\vspace{4mm}
 	\begin{itemize}
 		\item{Explicit measurement of individual grains.\footnotemark[3]}
-		\begin{itemize}
-			\item{Introduces field broadening}
-		\end{itemize}
 		\vspace{4mm}
 		\item{Implicit calculation using global measurements.\footnotemark[4]}
 		\begin{itemize}
+			\item{Single measurement with magnetometer}
+			\item{Integral measure}
 			\item{Uses bulk relations}
 		\end{itemize}
 	\end{itemize}	
@@ -150,28 +148,29 @@ Temperature Dependent Magnetisation Data}
 
 \begin{frame}
 	\frametitle{Our Method}
+	\begin{columns}
+	\column{8cm}
 	Aggregate Magnetisation:
 	$$
 	M(T) = M_0\int_0^\infty D^{d} m(D,T) f_D(D) dD
 	$$
-	
 	Scaling Ansatz:
 	$$
 	m(D,T) \propto D^{-\beta/\nu} \mu \left(D^{1/\nu}\frac{T-T_C^b}{T_C^b}\right)
 	$$
-	
 	Change of Variables:
 	$$
-	D = d_0\left(\frac{t}{T_C^b}\right)^{-\nu}
+	D = d_0\left(\frac{t}{T_C^b}\right)^{-\nu}\quad	t \equiv T_C^b - T_C(D)
 	$$
-	$$
-	t \equiv T_C^b - T_C(D)
-	$$
-	
 	Final Result:
 	$$
 	M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \mu\left(d_0^{\frac{1}{\nu}}\frac{T-T_C^b}{t}\right) f_t(t) dt
 	$$
+	\column{4cm}
+	\includegraphics[width=4cm]{Images/Ds_noinset}
+	
+	\includegraphics[width=4cm]{Images/Aggregate}
+	\end{columns}
 \end{frame}
 
 \begin{frame}
@@ -188,7 +187,9 @@ Temperature Dependent Magnetisation Data}
 	\end{itemize}
 	
 	\begin{center}
+	\includegraphics[width=5cm]{Images/Aggregate} \hspace{3mm}
 	\includegraphics[width=5cm]{Images/Ds}
+	
 	\end{center}
 \end{frame}
 
@@ -208,20 +209,43 @@ Temperature Dependent Magnetisation Data}
 			\item{Standard deviation $\sigma_D=10, 20, 30 ,40$}
 		\end{itemize}
 	\column{5cm}
-		\includegraphics[width=5cm]{Images/percs}
+		\includegraphics[width=4.5cm]{Images/distros}
+		
+		\includegraphics[width=4.5cm]{Images/unconst}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Test Case: 2D Ising Model}
+	\begin{columns}
+	\column{7cm}
+		Introduce constraint from:
+		$$
+		D = d_0\left(\frac{t}{T_C^b}\right)^{-\nu}
+		$$
+		
+		$$\Rightarrow \sigma_t^2 = \bar{t}^2\left(\left(1 + \frac{\sigma_D^2}{\bar{D}^2}\right)^{1/\nu^2}-1\right)
+		$$
+		
+		\begin{center}
+		Works much better!
+		\end{center}
+	\column{5cm}
+		\includegraphics[width=4.5cm]{Images/distros}
+		
+		\includegraphics[width=4.5cm]{Images/constr}
 	\end{columns}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Conclusions}
 	\begin{itemize}
-		\item{Presented a method to find size dependent $T_C$ distribution.}
+		\item{Presented a universal method to find size dependent $T_C$ distribution.}
 		\item{Based upon fitting ensemble magnetisation:}
 		$$
 		M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \mu\left(d_0^{\frac{1}{\nu}}\frac{T-T_C^b}{t}\right) f_t(t) dt
 		$$
-		\item{Tested against different size distributions $f_D$.}
-		\item{Given certain constraints, the method works well.}
+		\item{Successfully tested against different size distributions $f_D$, given certain constraints.}
 	\end{itemize}
 \end{frame}
 

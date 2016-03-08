@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.27)  2 MAR 2016 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.27)  8 MAR 2016 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,18 +1212,18 @@ Package pdftex.def Info: Images/uos_grey_large.png used on input line 63.
  [1
 
 {/home/jmw2g14/.texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Images/sponsor
--wo-eps-converted-to.pdf> <./Images/uos_grey_large.png>] <Images/Anisotropy.png
-, id=52, 491.436pt x 390.258pt>
-File: Images/Anisotropy.png Graphic file (type png)
+-wo-eps-converted-to.pdf> <./Images/uos_grey_large.png>] <Images/Ds_noinset.png
+, id=52, 529.7391pt x 428.5611pt>
+File: Images/Ds_noinset.png Graphic file (type png)
 
-<use Images/Anisotropy.png>
-Package pdftex.def Info: Images/Anisotropy.png used on input line 103.
-(pdftex.def)             Requested size: 113.81102pt x 90.37675pt.
+<use Images/Ds_noinset.png>
+Package pdftex.def Info: Images/Ds_noinset.png used on input line 102.
+(pdftex.def)             Requested size: 113.81102pt x 92.07344pt.
 
 <Images/person.jpeg, id=53, 225.0225pt x 177.0615pt>
 File: Images/person.jpeg Graphic file (type jpg)
  <use Images/person.jpeg>
-Package pdftex.def Info: Images/person.jpeg used on input line 103.
+Package pdftex.def Info: Images/person.jpeg used on input line 102.
 (pdftex.def)             Requested size: 113.81102pt x 89.55447pt.
 Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    date: 2016-02-22 13:14:40
@@ -1233,17 +1233,17 @@ Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    size: 12136 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/sponsor-wo-eps-conv
 erted-to.pdf Images/sponsor-wo.eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 102.
 Package epstopdf Info: Output file is already uptodate.
 File: Images/sponsor-wo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/sponsor-wo-eps-converted-to.pdf>
 Package pdftex.def Info: Images/sponsor-wo-eps-converted-to.pdf used on input l
-ine 103.
+ine 102.
 (pdftex.def)             Requested size: 49.84233pt x 19.91692pt.
 File: Images/uos_grey_large.png Graphic file (type png)
  <use Images/uos_grey_large.png>
-Package pdftex.def Info: Images/uos_grey_large.png used on input line 103.
+Package pdftex.def Info: Images/uos_grey_large.png used on input line 102.
 (pdftex.def)             Requested size: 91.66609pt x 19.91692pt.
 
 Overfull \vbox (23.91692pt too high) has occurred while \output is active []
@@ -1251,18 +1251,18 @@ Overfull \vbox (23.91692pt too high) has occurred while \output is active []
 
 [2
 
- <./Images/Anisotropy.png> <./Images/person.jpeg>]
-<Images/grains2.png, id=84, 559.08875pt x 511.9125pt>
+ <./Images/Ds_noinset.png> <./Images/person.jpeg>]
+<Images/grains2.png, id=82, 559.08875pt x 511.9125pt>
 File: Images/grains2.png Graphic file (type png)
  <use Images/grains2.png>
-Package pdftex.def Info: Images/grains2.png used on input line 122.
+Package pdftex.def Info: Images/grains2.png used on input line 121.
 (pdftex.def)             Requested size: 142.26378pt x 130.25867pt.
 
-<Images/TcD.png, id=85, 536.2434pt x 414.1071pt>
+<Images/TcD.png, id=83, 547.0839pt x 414.1071pt>
 File: Images/TcD.png Graphic file (type png)
  <use Images/TcD.png>
-Package pdftex.def Info: Images/TcD.png used on input line 122.
-(pdftex.def)             Requested size: 142.26378pt x 109.85791pt.
+Package pdftex.def Info: Images/TcD.png used on input line 121.
+(pdftex.def)             Requested size: 142.26378pt x 107.68425pt.
 Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    date: 2016-02-22 13:14:40
 (epstopdf)                    size: 364385 bytes
@@ -1271,17 +1271,17 @@ Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    size: 12136 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/sponsor-wo-eps-conv
 erted-to.pdf Images/sponsor-wo.eps>
-(epstopdf)             \includegraphics on input line 122.
+(epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
 File: Images/sponsor-wo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/sponsor-wo-eps-converted-to.pdf>
 Package pdftex.def Info: Images/sponsor-wo-eps-converted-to.pdf used on input l
-ine 122.
+ine 121.
 (pdftex.def)             Requested size: 49.84233pt x 19.91692pt.
 File: Images/uos_grey_large.png Graphic file (type png)
  <use Images/uos_grey_large.png>
-Package pdftex.def Info: Images/uos_grey_large.png used on input line 122.
+Package pdftex.def Info: Images/uos_grey_large.png used on input line 121.
 (pdftex.def)             Requested size: 91.66609pt x 19.91692pt.
 
 Overfull \vbox (23.91692pt too high) has occurred while \output is active []
@@ -1298,17 +1298,17 @@ Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    size: 12136 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/sponsor-wo-eps-conv
 erted-to.pdf Images/sponsor-wo.eps>
-(epstopdf)             \includegraphics on input line 141.
+(epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
 File: Images/sponsor-wo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/sponsor-wo-eps-converted-to.pdf>
 Package pdftex.def Info: Images/sponsor-wo-eps-converted-to.pdf used on input l
-ine 141.
+ine 139.
 (pdftex.def)             Requested size: 49.84233pt x 19.91692pt.
 File: Images/uos_grey_large.png Graphic file (type png)
  <use Images/uos_grey_large.png>
-Package pdftex.def Info: Images/uos_grey_large.png used on input line 141.
+Package pdftex.def Info: Images/uos_grey_large.png used on input line 139.
 (pdftex.def)             Requested size: 91.66609pt x 19.91692pt.
 
 Overfull \vbox (23.91692pt too high) has occurred while \output is active []
@@ -1325,17 +1325,17 @@ Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    size: 12136 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/sponsor-wo-eps-conv
 erted-to.pdf Images/sponsor-wo.eps>
-(epstopdf)             \includegraphics on input line 149.
+(epstopdf)             \includegraphics on input line 147.
 Package epstopdf Info: Output file is already uptodate.
 File: Images/sponsor-wo-eps-converted-to.pdf Graphic file (type pdf)
  <use Images/sponsor-wo-eps-converted-to.pdf>
 Package pdftex.def Info: Images/sponsor-wo-eps-converted-to.pdf used on input l
-ine 149.
+ine 147.
 (pdftex.def)             Requested size: 49.84233pt x 19.91692pt.
 File: Images/uos_grey_large.png Graphic file (type png)
 
 <use Images/uos_grey_large.png>
-Package pdftex.def Info: Images/uos_grey_large.png used on input line 149.
+Package pdftex.def Info: Images/uos_grey_large.png used on input line 147.
 (pdftex.def)             Requested size: 91.66609pt x 19.91692pt.
 
 Overfull \vbox (23.91692pt too high) has occurred while \output is active []
@@ -1344,6 +1344,21 @@ Overfull \vbox (23.91692pt too high) has occurred while \output is active []
 [5
 
 ]
+File: Images/Ds_noinset.png Graphic file (type png)
+ <use Images/Ds_noinset.png>
+Package pdftex.def Info: Images/Ds_noinset.png used on input line 174.
+(pdftex.def)             Requested size: 113.81102pt x 92.07344pt.
+
+<Images/Aggregate.png, id=167, 529.7391pt x 428.5611pt>
+File: Images/Aggregate.png Graphic file (type png)
+
+<use Images/Aggregate.png>
+Package pdftex.def Info: Images/Aggregate.png used on input line 174.
+(pdftex.def)             Requested size: 113.81102pt x 92.07344pt.
+
+Overfull \vbox (2.78763pt too high) detected at line 174
+ []
+
 Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    date: 2016-02-22 13:14:40
 (epstopdf)                    size: 364385 bytes
@@ -1352,17 +1367,16 @@ Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    size: 12136 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/sponsor-wo-eps-conv
 erted-to.pdf Images/sponsor-wo.eps>
-(epstopdf)             \includegraphics on input line 175.
+(epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
 File: Images/sponsor-wo-eps-converted-to.pdf Graphic file (type pdf)
- <use Images/sponsor-wo-eps-converted-to.pdf>
+<use Images/sponsor-wo-eps-converted-to.pdf>
 Package pdftex.def Info: Images/sponsor-wo-eps-converted-to.pdf used on input l
-ine 175.
+ine 174.
 (pdftex.def)             Requested size: 49.84233pt x 19.91692pt.
 File: Images/uos_grey_large.png Graphic file (type png)
-
-<use Images/uos_grey_large.png>
-Package pdftex.def Info: Images/uos_grey_large.png used on input line 175.
+ <use Images/uos_grey_large.png>
+Package pdftex.def Info: Images/uos_grey_large.png used on input line 174.
 (pdftex.def)             Requested size: 91.66609pt x 19.91692pt.
 
 Overfull \vbox (23.91692pt too high) has occurred while \output is active []
@@ -1370,11 +1384,17 @@ Overfull \vbox (23.91692pt too high) has occurred while \output is active []
 
 [6
 
-] <Images/Ds.png, id=196, 525.4029pt x 428.5611pt>
+ <./Images/Aggregate.png>]
+File: Images/Aggregate.png Graphic file (type png)
+ <use Images/Aggregate.png>
+Package pdftex.def Info: Images/Aggregate.png used on input line 194.
+(pdftex.def)             Requested size: 142.26378pt x 115.0918pt.
+
+<Images/Ds.png, id=198, 529.7391pt x 428.5611pt>
 File: Images/Ds.png Graphic file (type png)
  <use Images/Ds.png>
-Package pdftex.def Info: Images/Ds.png used on input line 193.
-(pdftex.def)             Requested size: 142.26378pt x 116.04pt.
+Package pdftex.def Info: Images/Ds.png used on input line 194.
+(pdftex.def)             Requested size: 142.26378pt x 115.0918pt.
 Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    date: 2016-02-22 13:14:40
 (epstopdf)                    size: 364385 bytes
@@ -1383,17 +1403,17 @@ Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    size: 12136 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/sponsor-wo-eps-conv
 erted-to.pdf Images/sponsor-wo.eps>
-(epstopdf)             \includegraphics on input line 193.
+(epstopdf)             \includegraphics on input line 194.
 Package epstopdf Info: Output file is already uptodate.
 File: Images/sponsor-wo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/sponsor-wo-eps-converted-to.pdf>
 Package pdftex.def Info: Images/sponsor-wo-eps-converted-to.pdf used on input l
-ine 193.
+ine 194.
 (pdftex.def)             Requested size: 49.84233pt x 19.91692pt.
 File: Images/uos_grey_large.png Graphic file (type png)
  <use Images/uos_grey_large.png>
-Package pdftex.def Info: Images/uos_grey_large.png used on input line 193.
+Package pdftex.def Info: Images/uos_grey_large.png used on input line 194.
 (pdftex.def)             Requested size: 91.66609pt x 19.91692pt.
 
 Overfull \vbox (23.91692pt too high) has occurred while \output is active []
@@ -1401,12 +1421,18 @@ Overfull \vbox (23.91692pt too high) has occurred while \output is active []
 
 [7
 
- <./Images/Ds.png>] <Images/percs.png, id=224, 544.1931pt x 426.393pt>
-File: Images/percs.png Graphic file (type png)
+ <./Images/Ds.png>] <Images/distros.png, id=226, 529.7391pt x 428.5611pt>
+File: Images/distros.png Graphic file (type png)
 
-<use Images/percs.png>
-Package pdftex.def Info: Images/percs.png used on input line 213.
-(pdftex.def)             Requested size: 142.26378pt x 111.46463pt.
+<use Images/distros.png>
+Package pdftex.def Info: Images/distros.png used on input line 216.
+(pdftex.def)             Requested size: 128.0374pt x 103.58263pt.
+ <Images/unconst.png, id=227, 544.1931pt x 426.393pt>
+File: Images/unconst.png Graphic file (type png)
+
+<use Images/unconst.png>
+Package pdftex.def Info: Images/unconst.png used on input line 216.
+(pdftex.def)             Requested size: 128.0374pt x 100.31947pt.
 Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    date: 2016-02-22 13:14:40
 (epstopdf)                    size: 364385 bytes
@@ -1415,17 +1441,17 @@ Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    size: 12136 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/sponsor-wo-eps-conv
 erted-to.pdf Images/sponsor-wo.eps>
-(epstopdf)             \includegraphics on input line 213.
+(epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
 File: Images/sponsor-wo-eps-converted-to.pdf Graphic file (type pdf)
  <use Images/sponsor-wo-eps-converted-to.pdf>
 Package pdftex.def Info: Images/sponsor-wo-eps-converted-to.pdf used on input l
-ine 213.
+ine 216.
 (pdftex.def)             Requested size: 49.84233pt x 19.91692pt.
 File: Images/uos_grey_large.png Graphic file (type png)
 
 <use Images/uos_grey_large.png>
-Package pdftex.def Info: Images/uos_grey_large.png used on input line 213.
+Package pdftex.def Info: Images/uos_grey_large.png used on input line 216.
 (pdftex.def)             Requested size: 91.66609pt x 19.91692pt.
 
 Overfull \vbox (23.91692pt too high) has occurred while \output is active []
@@ -1433,7 +1459,17 @@ Overfull \vbox (23.91692pt too high) has occurred while \output is active []
 
 [8
 
- <./Images/percs.png>]
+ <./Images/distros.png> <./Images/unconst.png>]
+File: Images/distros.png Graphic file (type png)
+ <use Images/distros.png>
+Package pdftex.def Info: Images/distros.png used on input line 238.
+(pdftex.def)             Requested size: 128.0374pt x 103.58263pt.
+
+<Images/constr.png, id=255, 544.1931pt x 426.393pt>
+File: Images/constr.png Graphic file (type png)
+ <use Images/constr.png>
+Package pdftex.def Info: Images/constr.png used on input line 238.
+(pdftex.def)             Requested size: 128.0374pt x 100.31947pt.
 Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    date: 2016-02-22 13:14:40
 (epstopdf)                    size: 364385 bytes
@@ -1442,23 +1478,50 @@ Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    size: 12136 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/sponsor-wo-eps-conv
 erted-to.pdf Images/sponsor-wo.eps>
-(epstopdf)             \includegraphics on input line 226.
+(epstopdf)             \includegraphics on input line 238.
 Package epstopdf Info: Output file is already uptodate.
 File: Images/sponsor-wo-eps-converted-to.pdf Graphic file (type pdf)
- <use Images/sponsor-wo-eps-converted-to.pdf>
+
+<use Images/sponsor-wo-eps-converted-to.pdf>
 Package pdftex.def Info: Images/sponsor-wo-eps-converted-to.pdf used on input l
-ine 226.
+ine 238.
 (pdftex.def)             Requested size: 49.84233pt x 19.91692pt.
 File: Images/uos_grey_large.png Graphic file (type png)
-
-<use Images/uos_grey_large.png>
-Package pdftex.def Info: Images/uos_grey_large.png used on input line 226.
+ <use Images/uos_grey_large.png>
+Package pdftex.def Info: Images/uos_grey_large.png used on input line 238.
 (pdftex.def)             Requested size: 91.66609pt x 19.91692pt.
 
 Overfull \vbox (23.91692pt too high) has occurred while \output is active []
 
 
 [9
+
+ <./Images/constr.png>]
+Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
+(epstopdf)                    date: 2016-02-22 13:14:40
+(epstopdf)                    size: 364385 bytes
+(epstopdf)             Output file: <Images/sponsor-wo-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-02-22 13:14:40
+(epstopdf)                    size: 12136 bytes
+(epstopdf)             Command: <repstopdf --outfile=Images/sponsor-wo-eps-conv
+erted-to.pdf Images/sponsor-wo.eps>
+(epstopdf)             \includegraphics on input line 250.
+Package epstopdf Info: Output file is already uptodate.
+File: Images/sponsor-wo-eps-converted-to.pdf Graphic file (type pdf)
+ <use Images/sponsor-wo-eps-converted-to.pdf>
+Package pdftex.def Info: Images/sponsor-wo-eps-converted-to.pdf used on input l
+ine 250.
+(pdftex.def)             Requested size: 49.84233pt x 19.91692pt.
+File: Images/uos_grey_large.png Graphic file (type png)
+
+<use Images/uos_grey_large.png>
+Package pdftex.def Info: Images/uos_grey_large.png used on input line 250.
+(pdftex.def)             Requested size: 91.66609pt x 19.91692pt.
+
+Overfull \vbox (23.91692pt too high) has occurred while \output is active []
+
+
+[10
 
 ]
 Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
@@ -1469,23 +1532,23 @@ Package epstopdf Info: Source file: <Images/sponsor-wo.eps>
 (epstopdf)                    size: 12136 bytes
 (epstopdf)             Command: <repstopdf --outfile=Images/sponsor-wo-eps-conv
 erted-to.pdf Images/sponsor-wo.eps>
-(epstopdf)             \includegraphics on input line 236.
+(epstopdf)             \includegraphics on input line 260.
 Package epstopdf Info: Output file is already uptodate.
 File: Images/sponsor-wo-eps-converted-to.pdf Graphic file (type pdf)
  <use Images/sponsor-wo-eps-converted-to.pdf>
 Package pdftex.def Info: Images/sponsor-wo-eps-converted-to.pdf used on input l
-ine 236.
+ine 260.
 (pdftex.def)             Requested size: 49.84233pt x 19.91692pt.
 File: Images/uos_grey_large.png Graphic file (type png)
 
 <use Images/uos_grey_large.png>
-Package pdftex.def Info: Images/uos_grey_large.png used on input line 236.
+Package pdftex.def Info: Images/uos_grey_large.png used on input line 260.
 (pdftex.def)             Requested size: 91.66609pt x 19.91692pt.
 
 Overfull \vbox (23.91692pt too high) has occurred while \output is active []
 
 
-[10
+[11
 
 ]
 \tf@nav=\write7
@@ -1497,23 +1560,23 @@ Overfull \vbox (23.91692pt too high) has occurred while \output is active []
 \tf@snm=\write9
 \openout9 = `pres.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 237.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
  (./pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 237.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 237.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
 Package rerunfilecheck Info: File `pres.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'pres.run.xml'.
 \openout1 = `pres.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 237.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 21833 strings out of 494957
- 406314 string characters out of 6180027
+ 21852 strings out of 494957
+ 406670 string characters out of 6180027
  570315 words of memory out of 5000000
- 24578 multiletter control sequences out of 15000+600000
+ 24592 multiletter control sequences out of 15000+600000
  26038 words of font info for 83 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  48i,15n,57p,944b,920s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1529,10 +1592,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf
 fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msam7.pfb>
-Output written on pres.pdf (10 pages, 465369 bytes).
+Output written on pres.pdf (11 pages, 680106 bytes).
 PDF statistics:
- 345 PDF objects out of 1000 (max. 8388607)
- 296 compressed objects within 3 object streams
- 21 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 320 compressed objects within 4 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 
