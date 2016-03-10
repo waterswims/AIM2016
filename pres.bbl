@@ -96,6 +96,104 @@
   \field{year}{2002}
 \endentry
 
+\entry{dobisz2008patterned}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Dobisz}{D.}%
+     {Elizabeth~A}{E.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bandic}{B.}%
+     {Zvonomir~Z}{Z.~Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wu}{W.}%
+     {Tsai-Wei}{T.-W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Albrecht}{A.}%
+     {Thomas}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{DEA+1}
+  \strng{fullhash}{DEABZZWTWAT1}
+  \field{sortinit}{D}
+  \field{number}{11}
+  \field{pages}{1836\bibrangedash 1846}
+  \field{title}{Patterned media: nanofabrication challenges of future disk
+  drives}
+  \field{volume}{96}
+  \field{journaltitle}{Proceedings of the IEEE}
+  \field{year}{2008}
+\endentry
+
+\entry{hovorka2012curie}{article}{}
+  \name{author}{9}{}{%
+    {{}%
+     {Hovorka}{H.}%
+     {O}{O}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Devos}{D.}%
+     {S}{S}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Coopman}{C.}%
+     {Q}{Q}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fan}{F.}%
+     {WJ}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aas}{A.}%
+     {CJ}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Evans}{E.}%
+     {RFL}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chen}{C.}%
+     {Xi}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ju}{J.}%
+     {G}{G}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chantrell}{C.}%
+     {RW}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HO+1}
+  \strng{fullhash}{HODSCQFWACERCXJGCR1}
+  \field{sortinit}{H}
+  \field{number}{5}
+  \field{pages}{052406}
+  \field{title}{The Curie temperature distribution of FePt granular magnetic
+  recording media}
+  \field{volume}{101}
+  \field{journaltitle}{Applied Physics Letters}
+  \field{year}{2012}
+\endentry
+
 \entry{pisana2015curie}{article}{}
   \name{author}{8}{}{%
     {{}%
