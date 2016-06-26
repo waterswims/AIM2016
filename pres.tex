@@ -3,7 +3,7 @@
 %\usepackage{fontspec}
 %\setmainfont{Georgia}
 %\usepackage[T1]{fontenc}
-\usepackage{winfonts}
+%\usepackage{winfonts}
 \usepackage[backend=bibtex]{biblatex}
 \renewcommand{\sfdefault}{georgia}
 
@@ -45,19 +45,19 @@
 
 %%%%%%%%%%%%%%%%%%%%
 
-\title{Identification of the Curie Temperature Distribution from
-Temperature Dependent Magnetisation Data}
-\author{Jonathon Waters\inst{1}, Hans Fangohr\inst{1}, Denis Kramer\inst{1}, Andreas Berger\inst{2} and Ondrej Hovorka\inst{1}}
-\institute{
-	\inst{1}
-	Engineering and the Environment,\\
-	University of Southampton,\\
-	UK\\ \vspace {1mm}
-	\inst{2}
-	CIC nanoGUNE Consolider,\\
-	San Sebastian,\\
-	Spain
-}
+\title{Multi-Scale Models of Granular Magnetic Materials at High Temperatures}
+\author{\textbf{Author}\\Jonathon Waters \\ \vspace{0.5cm} Supervisory Team \\ Hans Fangohr, Denis Kramer and Ondrej Hovorka}
+%\author{Jonathon Waters\inst{1}, Hans Fangohr\inst{1}, Denis Kramer\inst{1}, Andreas Berger\inst{2} and Ondrej Hovorka\inst{1}}
+%\institute{
+%	\inst{1}
+%	Engineering and the Environment,\\
+%	University of Southampton,\\
+%	UK\\ \vspace {1mm}
+%	\inst{2}
+%	CIC nanoGUNE Consolider,\\
+%	San Sebastian,\\
+%	Spain
+%}
 \date{}
 
 \begin{document}
@@ -132,8 +132,9 @@ Temperature Dependent Magnetisation Data}
 	\begin{itemize}
 		\item{Explicit measurement of individual grains.\footnotemark[3]}
 		\begin{itemize}
-			\item{Switching temperature is measured by a laser system set up}
-			\item{This is related to $T_C$}
+			\item{Switching temperature is measured by a laser system set up. This is related to $T_C$}
+			\item{Very little agreement between methods}
+			\item{Currently only applicable to HAMR}
 		\end{itemize}
 		\vspace{4mm}
 		\item{Identification from macroscale measurements\footnotemark[4]}
@@ -148,7 +149,7 @@ Temperature Dependent Magnetisation Data}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Objectives}
+	\frametitle{9 Month Objectives}
 	\begin{itemize}
 		\item{Develop a universal method to identify the $T_C$ distribution which incorporates the finite size effects of the individual grains\newline}
 		\item{Test the method against a well quantified benchmark (2D Ising system) in order to verify it's effectiveness for different distributions.\newline}
@@ -167,7 +168,7 @@ Temperature Dependent Magnetisation Data}
 	$$
 	Single Grain Magnetisation:
 	$$
-	m(D,T) \propto D^{-\beta/\nu} \mu \left(D^{1/\nu}\frac{T-T_C^b}{T_C^b}\right)
+	m(D,T) \propto D^{-\beta/\nu} \tilde{\mu} \left(D^{1/\nu}\frac{T-T_C^b}{T_C^b}\right)
 	$$
 	Change of Variables:
 	$$
@@ -175,7 +176,7 @@ Temperature Dependent Magnetisation Data}
 	$$
 	Final Result:
 	$$
-	M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \mu\left(\frac{T-T_C^b}{t}\right) f_t(t) dt
+	M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \tilde{\mu}\left(\frac{T-T_C^b}{t}\right) f_t(t) dt
 	$$}
 	\column{4cm}
 	\begin{center}
@@ -196,12 +197,12 @@ Temperature Dependent Magnetisation Data}
 	\includegraphics[width=4cm]{Images/Ds}
 	
 	$$
-	M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \mu\left(\frac{T-T_C^b}{t}\right) f_t(t) dt
+	M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \tilde{\mu}\left(\frac{T-T_C^b}{t}\right) f_t(t) dt
 	$$
 	
 	\begin{itemize}
 		\item{$M(T)$: To be fitted}
-		\item{$d$, $\nu$, $\beta$, $\mu$: Known information about the material}
+		\item{$d$, $\nu$, $\beta$, $\tilde{\mu}$: Known information about the material}
 		\item{$T_C^b$: May be known, otherwise taken from fit}
 		\item{$M_0^*$, $f_t$ [ $\bar{t}$, $\sigma_t$ ]: Taken from the fit}
 	\end{itemize}
@@ -219,7 +220,7 @@ Temperature Dependent Magnetisation Data}
 	\column{7cm}
 		\small{
 		$$
-		M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \mu\left(\frac{T-T_C^b}{t}\right) f_t(t) dt
+		M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \tilde{\mu}\left(\frac{T-T_C^b}{t}\right) f_t(t) dt
 		$$}
 		Used 2D Ising model as a benchmark:
 		\begin{itemize}
@@ -278,13 +279,12 @@ Temperature Dependent Magnetisation Data}
 	\begin{itemize}
 		\item{Universal method to find size dependent $T_C$ distribution based upon fitting ensemble magnetisation:}
 		$$
-		M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \mu\left(\frac{T-T_C^b}{t}\right) f_t(t) dt
+		M(T) = M_0^*\int_0^{T_C^b} t^{-d\nu +\beta} \tilde{\mu}\left(\frac{T-T_C^b}{t}\right) f_t(t) dt
 		$$
 		\item{Successfully tested against 2D Ising model (without a loss in generality) and found a strong parameter correlation which can be solved by the constraint:}
 		$$
 		\sigma_{T_C}^2 = (T_C^b - \bar{T}_C)^2\left(\left(1 + \frac{\sigma_D^2}{\bar{D}^2}\right)^{1/\nu^2}-1\right)
 		$$
-		\item{Future work may find this insignificant in other systems. e.g. Heisenerg model, FePt Hamiltonian e.c.t.}
 	\end{itemize}}
 \end{frame}
 
